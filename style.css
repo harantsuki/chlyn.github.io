@@ -9,7 +9,6 @@ html {
 
 body {
     background-color: #eee;
-
 }
 
 .container {
@@ -102,15 +101,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: red; */
     height: 100vh;
+    overflow-x: clip;
 }
 
 .content img {
     width: 700px;
     position: absolute;
-    top: 15%;
-    right: 10%;
+    top: 100px;
+    right: 0;
     z-index: -1;
 }
 
@@ -322,6 +321,18 @@ body {
 /* Ipad */
 
 @media screen and (max-width: 885px) {
+    .container {
+        padding: 40px 0;
+    }
+
+    .content {
+        padding: 0 40px;
+    }
+
+    .navbar {
+        padding: 0 40px;
+    }
+
     .navbar .logo {
         display: flex;
         flex-direction: column;
@@ -334,9 +345,9 @@ body {
 
     .content img {
         width: 1000px;
+        margin-left: -50px;
+        position:relative;
         transform: scaleX(-1);
-        top: 10%;
-        right: -55%;
     }
 
     .container-2 .card {
@@ -357,6 +368,18 @@ body {
 /* Phone */
 
 @media screen and (max-width: 430px) {
+    .container {
+        padding: 40px 0;
+    }
+
+    .content {
+        padding: 0 40px;
+    }
+
+    .navbar {
+        padding: 0 40px;
+    }
+
     .navbar .menu {
         display: block;
         color: rgb(214, 211, 9);
@@ -367,17 +390,13 @@ body {
         position: absolute;
         z-index: 1;
         top: 45px;
-        right: 30px;
-    }
-
-    .container {
-        padding: 30px 30px;
+        
     }
 
     .content img {
-        width: 600px;
-        top: 15%;
-        right: -90%;
+        width: 700px;
+        margin-left: -190px;
+        translate: scaleY(-1);
     }
 
     .navbar ul {
