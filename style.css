@@ -106,7 +106,7 @@ body {
 }
 
 .content img {
-    width: 700px;
+    width: 500px;
     position: absolute;
     top: 100px;
     right: 0;
@@ -344,8 +344,9 @@ body {
     }
 
     .content img {
-        width: 1000px;
-        margin-left: -50px;
+        width: 700px;
+        margin-top: 500px;
+        margin-left: -100px;
         position:relative;
         transform: scaleX(-1);
     }
@@ -394,8 +395,9 @@ body {
     }
 
     .content img {
-        width: 700px;
-        margin-left: -190px;
+        width: 500px;
+        margin-bottom: 150px;
+        margin-left: -350px;
         translate: scaleY(-1);
     }
 
@@ -488,4 +490,9 @@ body {
     .container-3 p {
         font-size: 14px;
     }
+
+    .text-content h1:nth-child(3) {
+        color: rgb(122, 58, 32);
+    }
+
 }
